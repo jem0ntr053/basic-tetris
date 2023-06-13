@@ -1,16 +1,37 @@
+.container {
+  display: flex;
+  background-color: #282a36; /* Use Dracula's background color */
+}
+
 .grid {
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
-}
-
-.grid div {
-  height: 20px;
-  width: 20px;
+  background-color: #44475a; /* Use Dracula's current line color */
 }
 
 .tetromino {
-  background-color: blue;
+  background-color: #ff5555; /* Use Dracula's red color */
 }
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #44475a; /* Use Dracula's current line color */
+}
+
+.grid div, .mini-grid div {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #6272a4; /* Add border to each grid cell */
+  box-sizing: border-box; /* Include border in width and height */
+}
+
+.taken {
+  background-color: transparent; /* Or use the same color as the grid's background */
+}
+
