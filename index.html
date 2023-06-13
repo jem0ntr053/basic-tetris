@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <script src="app.js" charset="utf-8"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Basic Tetris</title>
   </head>
@@ -11,7 +11,7 @@
     <button id="start-button">Start/Pause</button>
 
     <div class="container">
-      <div class="grid">
+      <div class="grid" id="game-grid">
         <div></div>
         <div></div>
         <div></div>
@@ -243,5 +243,16 @@
         <div></div>
       </div>
     </div>
+
+    <!-- <script> -->
+	  <!--   Create the divs for the grid-->
+	  <!--  let grid = document.getElementById('game-grid');-->
+	  <!--  for(let i=0; i<200; i++) {-->
+		<!--    let newDiv = document.createElement('div');-->
+		<!--    grid.appendChild(newDiv);-->
+	  <!--  }-->
+    <!-- </script>-->
+
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
