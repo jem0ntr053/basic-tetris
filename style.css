@@ -1,16 +1,60 @@
+.container {
+  display: flex;
+  overflow: hidden; /* hide the overflow */
+  background-color: #282a36; /* Use Dracula's background color */
+}
+
 .grid {
   width: 200px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
-}
-
-.grid div {
-  height: 20px;
-  width: 20px;
+  background-color: #44475a; /* Use Dracula's current line color */
 }
 
 .tetromino {
-  background-color: blue;
+  background-color: #ff5555; /* Use Dracula's red color */
 }
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #44475a; /* Use Dracula's current line color */
+}
+
+.grid div, .mini-grid div {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #6272a4; /* Add border to each grid cell */
+  box-sizing: border-box; /* Include border in width and height */
+}
+
+.hidden-grid {
+  display: none;
+}
+
+#start-button {
+  /*margin-left: 5px;*/
+  width: 80px;
+  height: 40px;
+  background: #282a36; /* Use Dracula's background color */
+  border: none;
+  color: #f8f8f2; /* Use Dracula's foreground color */
+}
+
+#start-button:before {
+  height: 0;
+  width: 2px;
+}
+
+#start-button:hover {
+  background: #6272a4; /* Use Dracula's selection color */
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5),
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
